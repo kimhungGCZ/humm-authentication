@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/02-User-Profile.iml" filepath="$PROJECT_DIR$/02-User-Profile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/humm-authentication.iml" filepath="$PROJECT_DIR$/humm-authentication.iml" />
     </modules>
   </component>
 </project>

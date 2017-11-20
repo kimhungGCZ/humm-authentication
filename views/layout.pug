@@ -7,11 +7,13 @@ html
     script(src="https://cdn.auth0.com/js/auth0/8.7/auth0.min.js")
   body
     nav.w3-bar.w3-border.w3-light-grey( role="navigation" )
-      .w3-bar-item.w3-text-grey Auth0 - NodeJS
+      .w3-bar-item.w3-text-grey GCZ - Authentication System
       a( href="/").w3-bar-item.w3-button Home
       if loggedIn
-        a( href="/user" ).w3-bar-item.w3-button Profile
+        a( href="/user/token").w3-bar-item.w3-button Token
+        a( href="/user" ).w3-bar-item.w3-button User
         a( href="/logout" ).w3-bar-item.w3-button Logout
       else
+        a( href="/token" ).w3-bar-item.w3-button Token
         a( href="/login" ).w3-bar-item.w3-button Login
     block content

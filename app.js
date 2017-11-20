@@ -28,7 +28,7 @@ const strategy = new Auth0Strategy(
     // accessToken is the token to call Auth0 API (not needed in the most cases)
     // extraParams.id_token has the JSON Web Token
     // profile has all the information from the user
-      profile['accessToken'] = extraParams['id_token']
+      profile['token'] = extraParams['id_token']
     return done(null,profile);
   }
 );
@@ -90,7 +90,7 @@ app.use(function(req, res, next) {
 });
 
 app.use('/', routes);
-app.use('/token', user);
+app.use('/user', user);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
